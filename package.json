@@ -1,0 +1,17 @@
+{
+  "name": "wikibase-dump-formatter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "validate-ttl": "ttl"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "split": "^1.0.1",
+    "turtle-validator": "^1.0.2"
+  }
+}
