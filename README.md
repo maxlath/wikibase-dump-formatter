@@ -17,8 +17,8 @@ docker-compose exec wikibase /bin/sh -c "php ./extensions/Wikibase/repo/maintena
 cat dump.ttl | ./format.js 'https://my.domain' > formatted_dump.ttl
 # Validate
 npm run validate-ttl formatted_dump.ttl
-# Load the dump to a previously created Blazegraph namespace (example here with namespace "foo")
-curl http://localhost:9999/bigdata/namespace/foo/dataloader -H 'Content-Type: application/x-turtle' -d@./formatted_dump.ttl
+# Load the dump to a previously created Blazegraph namespace (see $BLAZEGRAPH_HOST/bigdata/#namespaces, example here with namespace "foo")
+curl $BLAZEGRAPH_HOST/bigdata/namespace/foo/dataloader -H 'Content-Type: application/x-turtle' -d@./formatted_dump.ttl
 ```
 
 ## Example
