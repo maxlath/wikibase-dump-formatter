@@ -1,4 +1,4 @@
-# wikibase dump formatter
+# wikibase-dump-formatter
 
 Extends Wikibase dump prefixed URIs with a custom domain.
 
