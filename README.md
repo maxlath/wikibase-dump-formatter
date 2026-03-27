@@ -4,7 +4,7 @@ Extends Wikibase dump prefixed URIs with a custom domain.
 
 ## Install
 ```
-git clone https://github.com/maxlath/wikibase-dump-formatter
+git clone https://codeberg.org/maxlath/wikibase-dump-formatter
 cd wikibase-dump-formatter
 npm install
 ```
